@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-v20-latin-700.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1d1f29;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 38px 24px 60px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  margin: 0 0 4px;
+  font-size: 28px;
+}
+
+.page-header p,
+.user-name p,
+.overview-card h3 {
+  color: #8c98c6;
+  font-weight: 700;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-cards,
+.overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.social-cards {
+  margin-top: 42px;
+}
+
+.user-card {
+  flex-grow: 1;
+  width: 230px;
+  min-width: 210px;
+  padding: 26px 16px 24px;
+  border-top: 4px solid #178ff5;
+  border-radius: 5px;
+  background: #252b42;
+  text-align: center;
+}
+
+.user-card.instagram {
+  border-image: linear-gradient(to right, #fdc366, #df4896) 1;
+  border-radius: 0 0 5px 5px;
+}
+
+.user-card.youtube {
+  border-top-color: #c4032b;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 20px;
+}
+
+.user-name img,
+.overview-card-top img {
+  width: 20px;
+  height: 20px;
+}
+
+.user-name p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.followers {
+  margin: 20px 0 0;
+  font-size: 56px;
+  line-height: 48px;
+}
+
+.follower-label {
+  margin: 9px 0 25px;
+  color: #8c98c6;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  color: #1eb589;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.change img {
+  width: 8px;
+  height: 4px;
+}
+
+.change.down {
+  color: #dc414c;
+}
+
+.overview {
+  margin-top: 46px;
+}
+
+.overview h2 {
+  margin: 0 0 22px;
+  font-size: 22px;
+}
+
+.overview-cards {
+  gap: 22px 30px;
+}
+
+.overview-card {
+  flex-grow: 1;
+  width: 230px;
+  min-width: 210px;
+  padding: 24px 22px 20px;
+  border-radius: 5px;
+  background: #252b42;
+}
+
+.overview-card-top,
+.overview-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview-card h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.overview-number {
+  margin: 20px 0 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.overview-card-bottom .change {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    padding: 32px 20px 48px;
+  }
+
+  .page-header h1 {
+    font-size: 22px;
+  }
+
+  .social-cards,
+  .overview-cards {
+    gap: 16px;
+  }
+
+  .user-card,
+  .overview-card {
+    width: 100%;
+    min-width: 0;
+  }
+}
